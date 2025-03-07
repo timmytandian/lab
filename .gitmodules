@@ -1,6 +1,3 @@
-[submodule "terraform/tfc-getting-started"]
-	path = terraform/tfc-getting-started
-	url = https://github.com/hashicorp/tfc-getting-started.git
 [submodule "nodejs/alphabetShifter"]
 	path = nodejs/alphabetShifter
 	url = git@github.com:timmytandian/alphabetShifter.git
