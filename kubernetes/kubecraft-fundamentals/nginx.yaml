@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: nginx-yaml
+    generated-from: kubectl-run-dryrun
+  name: nginx-yaml
+spec:
+  containers:
+  - image: nginx
+    name: nginx
