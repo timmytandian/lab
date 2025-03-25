@@ -4,6 +4,7 @@ metadata:
   labels:
     run: nginx-yaml
     generated-from: kubectl-run-dryrun
+    foo: bar
   name: nginx-yaml
 spec:
   containers:
