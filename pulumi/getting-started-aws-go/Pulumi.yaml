@@ -1,0 +1,7 @@
+name: getting-started-aws-go
+description: A minimal AWS Pulumi program written in Go to deploy static website in S3
+runtime: go
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: aws-go
