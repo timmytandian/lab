@@ -17,10 +17,10 @@ spec:
       containers:
       - image: httpd
         name: httpd
-      - image: redis:8.0-M04-alpine
-        name: redis
+#      - image: redis:8.0-M04-alpine
+#        name: redis
   strategy:
     type: RollingUpdate
     rollingUpdate:
-      maxUnavailable: 1
-      maxSurge: 1
+      maxUnavailable: 3
+      maxSurge: 3
