@@ -14,7 +14,7 @@ import sys
 import time
 
 # Set up the constants:
-PAUSE = 0.2  # (!) Try changing this to 1.0 or 0.0.
+PAUSE: str = 0.2  # (!) Try changing this to 1.0 or 0.0.
 DENSITY = 0.10  # (!) Try changing this to anything from 0.0 to 1.0.
 
 DUCKLING_WIDTH = 5
