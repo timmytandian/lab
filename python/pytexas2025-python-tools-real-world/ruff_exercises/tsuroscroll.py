@@ -1,7 +1,7 @@
 # Tsuro Scroll, by Al Sweigart al@inventwithpython.com
 # Draws convoluted and twisting routes.
 
-import random, sys
+import random
 
 WIDTH = 70
 HEIGHT = 2500
