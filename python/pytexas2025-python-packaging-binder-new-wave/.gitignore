@@ -1,0 +1,13 @@
+.venv
+/.*_cache
+/.github
+*.pem
+/node_modules
+dist
+*.egg-info
+*.c
+build
+*.so
+__pycache__
+Cargo.lock
+target
