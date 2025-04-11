@@ -18,8 +18,6 @@ PAUSE: float = 0.2  # (!) Try changing this to 1.0 or 0.0.
 DENSITY = 0.10  # (!) Try changing this to anything from 0.0 to 1.0.
 
 DUCKLING_WIDTH: int = 5
-DUCKLING_WIDTH = 4.3
-
 LEFT = 'left'
 RIGHT = 'right'
 BEADY = 'beady'
