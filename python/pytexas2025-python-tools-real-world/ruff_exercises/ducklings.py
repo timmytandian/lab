@@ -8,7 +8,10 @@ A screensaver of many many ducklings.
 This code is available at https://nostarch.com/big-book-small-python-programming
 Tags: large, artistic, object-oriented, scrolling"""
 
-import random, shutil, sys, time
+import random
+import shutil
+import sys
+import time
 
 # Set up the constants:
 PAUSE = 0.2  # (!) Try changing this to 1.0 or 0.0.
@@ -49,16 +52,16 @@ def main():
     while True:  # Main program loop.
         for laneNum, ducklingObj in enumerate(ducklingLanes):
             # See if we should create a duckling in this lane:
-            if (ducklingObj == None and random.random() <= DENSITY):
+            if (ducklingObj is None and random.random() <= DENSITY):
                     # Place a duckling in this lane:
                     ducklingObj = Duckling()
                     ducklingLanes[laneNum] = ducklingObj
 
-            if ducklingObj != None:
+            if ducklingObj is not None:
                 # Draw a duckling if there is one in this lane:
                 print(ducklingObj.getNextBodyPart(), end='')
                 # Delete the duckling if we've finished drawing it:
-                if ducklingObj.partToDisplayNext == None:
+                if ducklingObj.partToDisplayNext is None:
                     ducklingLanes[laneNum] = None
             else:
                 # Draw five spaces since there is no duckling here.
