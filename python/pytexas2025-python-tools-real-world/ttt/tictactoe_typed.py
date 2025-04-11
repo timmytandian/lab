@@ -10,13 +10,17 @@ Tags: short, board game, game, two-player"""
 #                       7|8|9
 # Keys are 1 through 9, the values are X, O, or BLANK:
     
-ALL_SPACES = ['1', '2', '3', '4', '5', '6', '7', '8', '9']
+ALL_SPACES: list[str] = ['1', '2', '3', '4', '5', '6', '7', '8', '9']
+
+X: str
+O: str
+BLANK: str
 X, O, BLANK = 'X', 'O', ' '  # Constants for string values.
 
 
-def main():
+def main() -> None:
     print('Welcome to Tic-Tac-Toe!')
-    gameBoard = getBlankBoard()  # Create a TTT board dictionary.
+    gameBoard: dict[str,str] = getBlankBoard()  # Create a TTT board dictionary.
     currentPlayer, nextPlayer = X, O  # X goes first, O goes next.
 
     while True:  # Main game loop.
@@ -44,7 +48,7 @@ def main():
     print('Thanks for playing!')
 
 
-def getBlankBoard():
+def getBlankBoard() -> dict[str,str]:
     """Create a new, blank tic-tac-toe board."""
     board = {}
     for space in ALL_SPACES:
