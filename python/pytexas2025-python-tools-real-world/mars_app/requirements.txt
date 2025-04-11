@@ -1,0 +1,8 @@
+pyperclip
+whatismyip
+pytweening
+cliprec
+pyaudacity
+pwinput
+showcallstack
+examplesky==2.0
