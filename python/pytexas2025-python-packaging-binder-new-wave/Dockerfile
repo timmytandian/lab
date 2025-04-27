@@ -142,7 +142,7 @@ RUN starship preset no-nerd-font -o $HOME/.config/starship.1.toml && \
     rm $HOME/.config/starship.*.toml $HOME/merge-starship.py && \
     mkdir -p $HOME/.config/lsd && \
     echo -e 'icons:\n  theme: unicode' >>$HOME/.config/lsd/config.yaml
-ENV BAT_THEME="TwoDark"
+ENV BAT_THEME="TwoLight"
 
 # copy repo content so is available within the image
 WORKDIR $HOME/w
