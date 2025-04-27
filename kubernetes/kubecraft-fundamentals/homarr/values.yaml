@@ -1,0 +1,5 @@
+persistence:
+  homarrDatabase:
+    enabled: true
+    storageClassName: "local-path"
+    size: "50Mi"
