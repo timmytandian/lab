@@ -1,0 +1,35 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: postgres-tryout
+  labels:
+    name: postgres-tryout
+
+---
+apiVersion: postgresql.cnpg.io/v1
+kind: Cluster
+metadata:
+  name: postgres-tryout
+  namespace: postgres-tryout
+spec:
+  instances: 2
+
+  storage:
+    size: 1Gi
+  managed:
+    services:
+      ## disable the default services
+      disabledDefaultServices: ["ro", "r"]
+      additional:
+        - selectorType: rw
+          serviceTemplate:
+            metadata:
+              name: "postgres-tryout-loadbalancer-rw"
+              labels:
+                test-label: "true"
+              annotations:
+                test-annotation: "true"
+            spec:
+              type: LoadBalancer
+
+
