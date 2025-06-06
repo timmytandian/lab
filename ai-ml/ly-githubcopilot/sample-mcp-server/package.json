@@ -1,0 +1,19 @@
+{
+    "name": "sample-mcp-server",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "-   `stdio_server.ts`：標準入出力の MCP サーバー\r -   `streamable_http_server.ts`：Streamable HTTP 形式の MCP サーバー\r -   `stateful_http_server.ts`：ステートフルな Streamable HTTP 形式の MCP サーバー\r -   `client.ts`：ステートフルな MCP サーバーとの通信を行うクライアント",
+    "dependencies": {
+        "@modelcontextprotocol/sdk": "^1.12.1"
+    },
+    "devDependencies": {
+        "@types/node": "^22.15.30"
+    },
+    "type": "module"
+}
