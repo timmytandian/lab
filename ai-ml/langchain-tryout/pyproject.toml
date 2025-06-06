@@ -1,0 +1,26 @@
+[project]
+name = "langchain-tryout"
+version = "0.1.0"
+description = "A project to try out and understand langchain technology"
+authors = [{ name = "timmytandian", email = "timmy@timmy.com" }]
+requires-python = ">=3.10.0,<3.12"
+dependencies = [
+    "langchain>=0.3.0",
+    "langchain-community>=0.3.24",
+    "langchain-google-genai>=2.1.4",
+    "pymysql>=1.1.1",
+]
+
+#[build-system]
+#requires = ["hatchling"]
+#build-backend = "hatchling.build"
+
+[tool.pyright]
+# https://github.com/microsoft/pyright/blob/main/docs/configuration.md
+useLibraryCodeForTypes = true
+exclude = [".cache"]
+
+[tool.ruff]
+# https://beta.ruff.rs/docs/configuration/
+select = ['E', 'W', 'F', 'I', 'B', 'C4', 'ARG', 'SIM']
+ignore = ['W291', 'W292', 'W293']
